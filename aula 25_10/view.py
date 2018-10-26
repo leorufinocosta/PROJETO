@@ -1,3 +1,5 @@
+
+
 class View:
 
     def __init__(self):
@@ -34,11 +36,18 @@ class View:
                 print('\n Valor incorreto')
 
     #Metodo para exibir lista de compras
-    def exibir_lista_compras(self, lista_compras):
+    #def exibir_lista_compras(self, lista_compras):
         # A lista de compras é um dicionario
         # Percorrer o dicionario
-        for chave, valor in lista_compras.items():
-            print(f'- {chave} : {valor}')
+        #for chave, valor in lista_compras.items():
+          #  print(f'- {chave} : {valor}')
+
+    def exibir_lista_compras(self, lista_compras):
+        self.lista_compras = lista_compras
+        est = open('estoque.txt', 'r')
+        lista = est.read()
+        est.close()
+        print(lista)
 
     def incluir_item(self):
         qual_item = input("Qual item quer adicionar: ")

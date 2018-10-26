@@ -1,0 +1,3 @@
+Omo: 1
+Arroz: 2
+Bombril: 10

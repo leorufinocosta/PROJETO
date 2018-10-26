@@ -1,7 +1,7 @@
 #classe modelo
 class Model:
     def __init__(self):
-        self.lista_compras = {'Omo': 1, 'Arroz': 2, 'Bombril': 10}
+        self.lista_compras = open('estoque.txt', 'r')
 
     #Metodo de recuperação
     def get_lista_compras(self):

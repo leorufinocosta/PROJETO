@@ -10,9 +10,7 @@ class Control:
     def get_lista_compras(self):
         return self.model.get_lista_compras()
 
-    def incluir_item(self):
-        if view.qual_item in model.lista_compras == True:
-
-
+    #def incluir_item(self):
+     #   if view.qual_item in model.lista_compras == True:
 
 
