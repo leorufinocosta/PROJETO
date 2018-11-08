@@ -31,9 +31,9 @@ class Janela_Principal(Tk):
         #Criando um item de menu e subitens
         self.menu_principal = Menu(self.menu, tearoff=0)
         self.menu_principal.add_command(label='Segunda Janela', command=self.criar_segunda_janela)
-        self.menu_principal.add_command(label='Comando 2')
-        self.menu_principal.add_command(label='Comando 3')
-        self.menu_principal.separator()
+        self.menu_principal.add_command(label='Comando 2', command=self.menu_click)
+        self.menu_principal.add_command(label='Comando 3', command=self.menu_click)
+        self.menu_principal.add_separator()
         self.menu_principal.add_command(label='sair', command=self.destroy)
         self.menu.add_cascade(label='Principal', menu=self.menu_principal)
 

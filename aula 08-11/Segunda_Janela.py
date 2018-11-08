@@ -11,9 +11,10 @@ class Segunda_Janela(Toplevel):
         self.title('Segunda Janela')
         self.transient(parent)
         self.grab_set()
-        self.btn_close = Button(self, width=10, text='Sair', command=self.destroy())
+        self.btn_close = Button(self, width=10, text='Sair', command=self.destroy)
         #Posicionando os widgets
         self.btn_close.place(x=10, y=150)
     def destroy(self):
         if messagebox.askokcancel('Confirmação', 'Deseja Sair?'):
             super().destroy()
+
