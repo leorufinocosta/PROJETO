@@ -1,5 +1,3 @@
-from Janela_Principal import Janela_Principal
+from Controle import Controle
 
-jnl = Janela_Principal()
-
-jnl.mainloop()
+Controle()

@@ -5,7 +5,9 @@ from Segunda_Janela import Segunda_Janela
 
 class Janela_Principal(Tk):
     #Metodo construtor
-    def __init__(self):
+    def __init__(self, controle):
+        #atributos
+        self.controle = controle
         #Executar o metodo da classe mae
         super().__init__()
         #Ajustar o tamanho
@@ -48,8 +50,11 @@ class Janela_Principal(Tk):
 
     # Metodo para o btn_ok
     def btn_ok_click(self):
-        # mudar o texto de lbl_ok
-        self.lbl_ok['text'] = self.txt_ok.get()
+        # recuparar a lista de compras
+        lista_compras = self.controle.get_lista_compras()
+        # percorrer a lista
+        for item in lista_compras:
+            messagebox.showinfo('Item', item.to_string())
 
     # metodo para clicar no icone do menu
     def menu_click(self):
